@@ -1,0 +1,23 @@
+import SectionShell from "../../components/SectionShell";
+import ContactUs from "../../components/ContactUs";
+export const metadata = {
+  title: "Contact Us",
+  description: "Get in touch with BIMACME for enquiries and quotes.",
+  openGraph: {
+    title: "Get in touch with BIMACME",
+    description: "Send us enquiry",
+    url: "https://bimacme.com/contact",
+  },
+};
+
+export default function ContactPage() {
+  return (
+    <SectionShell
+      id="contact"
+      title="Contact Us"
+      subtitle="Ready to start your next project? Contact us for a consultation and quote."
+    >
+      <ContactUs detailedMode={true} />
+    </SectionShell>
+  );
+}
