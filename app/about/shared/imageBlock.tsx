@@ -17,6 +17,7 @@ function ImageBlock({
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <Image
+        unoptimized={true}
         src={image}
         alt="image"
         width={width}

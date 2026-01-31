@@ -44,6 +44,7 @@ function Work({
           {projects.map((item) => (
             <div key={item.id} className={`${item.col} ${item.row}`}>
               <Image
+                unoptimized={true}
                 src={item.src}
                 alt={item.id.toString()}
                 className={item.className}

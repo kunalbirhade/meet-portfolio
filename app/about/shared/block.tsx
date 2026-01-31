@@ -20,7 +20,7 @@ function AboutBlock({
       >
         {description}
       </div>
-      {image && <Image src={image} alt={title} width={100} height={100} />}
+      {image && <Image unoptimized={true} src={image} alt={title} width={100} height={100} />}
     </div>
   );
 }

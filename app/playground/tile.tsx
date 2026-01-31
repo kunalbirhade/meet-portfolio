@@ -5,6 +5,7 @@ function Tile(props: any) {
   return (
     <div className="flex flex-col items-center justify-center pt-7">
       <Image
+        unoptimized={true}
         src={props.src}
         alt="work-1"
         width={500}

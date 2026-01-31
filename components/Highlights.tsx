@@ -11,6 +11,7 @@ export default function Highlights(props: any) {
             Some highlights from the past year
           </span>
           <Image
+            unoptimized={true}
             src="/highlights/describe-arrow.png"
             alt="describe-arrow"
             width={70}

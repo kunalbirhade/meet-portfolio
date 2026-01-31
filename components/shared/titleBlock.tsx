@@ -25,6 +25,7 @@ function TitleBlock({
         </div>
         {!detailedMode && (
           <Image
+            unoptimized={true}
             src="/projects/explore-button.png"
             alt="explore-work"
             className="pt-4"

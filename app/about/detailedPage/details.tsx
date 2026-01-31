@@ -13,6 +13,7 @@ function PersonalDetails() {
           <div className="grid grid-cols-2 items-center justify-center w-full py-8 gap-16">
             <div className="col-span-1">
               <Image
+                unoptimized={true}
                 src="/about/full-page-profile.png"
                 alt="Profile"
                 width={350}
