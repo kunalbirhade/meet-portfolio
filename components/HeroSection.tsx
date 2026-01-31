@@ -10,6 +10,7 @@ export default function HeroSection(props: any) {
         <span className="absolute top-[-6px] right-[-6px] w-2 h-2 bg-light-gray rounded-full" />
         <div className="flex items-center justify-center flex-col gap-4">
           <Image
+            unoptimized={true}
             src="/home/profile.png"
             alt="Meet Panchal"
             width={175}
@@ -55,6 +56,7 @@ export default function HeroSection(props: any) {
               height={10}
             />
             <Image
+              unoptimized={true}
               src="/home/hero-loading.gif"
               alt="hero-loading"
               width={100}
