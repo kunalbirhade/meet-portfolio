@@ -1,10 +1,14 @@
 import React from "react";
 
 function ImageStack(props: any) {
+  const { className, classNamePlaceholder } = props;
+
   return (
-    <div className={`image-stack w-[15%] relative`}>
-      <div className="image-stack-img bg-[url('/highlights/image-stack-2.png')] bg-cover bg-center transition-all duration-300"></div>
-      <div className="image-placeholder rounded-xl border-border-custom border-[3px] border-dashed shadow-md bg-[url('/highlights/image-stack-2.png')] filter"></div>
+    <div className={`image-stack w-[20%] relative`}>
+      <div
+        className={`image-stack-img ${className} bg-cover bg-center transition-all duration-300`}
+      ></div>
+      <div className="image-placeholder rounded-xl border-border-custom border-[3px] border-dashed shadow-md bg-[#696969]"></div>
     </div>
   );
 }

@@ -77,23 +77,8 @@ body {
   object-fit: cover;
   z-index: 20;
   border-radius: 10px;
-  rotate: -10deg;
-  /* position: absolute; */
+  /* rotate: -10deg; */
 }
-/* .image-stack .image-stack-img::before {
-  content: "";
-  position: absolute;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.image-stack .image-stack-img::before {
-  transform: rotate(10deg);
-  background-color: #6b7280;
-} */
 
 .image-stack .image-stack-img:hover {
   rotate: 0deg !important;
