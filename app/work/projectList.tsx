@@ -66,7 +66,12 @@ const workProjects = [
     row: "row-span-2",
     className: "!w-full !h-full",
     title: "G CAPITAL",
-    description: ["Product Identity", "Business Analysis", "Product Prototype", "Dashboard Design"],
+    description: [
+      "Product Identity",
+      "Business Analysis",
+      "Product Prototype",
+      "Dashboard Design",
+    ],
     subtitle: "Investment Platform | Crypto-Commodities-Stocks",
   },
   {
@@ -88,11 +93,7 @@ const workProjects = [
     row: "row-span-1",
     className: "!w-full !h-full rounded-xl",
     title: "PAWSOME",
-    description: [
-      "Product Research",
-      "User Experience",
-      "Design Mockups",
-    ],
+    description: ["Product Research", "User Experience", "Design Mockups"],
     subtitle: "Pet Platform for Connecting | Pet enthusiasts as a community",
   },
   {
@@ -108,7 +109,8 @@ const workProjects = [
       "User Experience",
       "Project Collaboration",
     ],
-    subtitle: "Business Intelligence | Internal Construction Project Management System",
+    subtitle:
+      "Business Intelligence | Internal Construction Project Management System",
   },
   {
     id: 9,
@@ -118,12 +120,7 @@ const workProjects = [
     row: "row-span-2",
     className: "!w-full !h-full rounded-xl",
     title: "UNESCO CHAIR",
-    description: [
-      "Proposal",
-      "Curating",
-      "Content Strategy",
-      "Digital Media"
-    ],
+    description: ["Proposal", "Curating", "Content Strategy", "Digital Media"],
     subtitle: "Clean India Mission | Energy Transition",
   },
   {
@@ -150,11 +147,7 @@ const workProjects = [
     row: "row-span-1",
     className: "!w-full !h-full rounded-xl",
     title: "DIGITAL TRANSFORMATION",
-    description: [
-      "Proposal ",
-      "Methodology",
-      "Business Development Strategy",
-    ],
+    description: ["Proposal ", "Methodology", "Business Development Strategy"],
     subtitle: "Master Thesis | Management Research",
   },
   {
@@ -165,12 +158,9 @@ const workProjects = [
     row: "row-span-1",
     className: "!w-full !h-full rounded-xl",
     title: "MITMUT STUDIO",
-    description: [
-      "Business Model",
-      "Investor Pitch",
-      "Product Visuals",
-    ],
-    subtitle: "Pressed Funding for Product Development | Eduverse as Gamified Learning Experience  ",
+    description: ["Business Model", "Investor Pitch", "Product Visuals"],
+    subtitle:
+      "Pressed Funding for Product Development | Eduverse as Gamified Learning Experience  ",
   },
 ];
 

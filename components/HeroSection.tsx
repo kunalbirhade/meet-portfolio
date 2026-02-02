@@ -1,11 +1,9 @@
-"use client";
-
 import Image from "next/image";
 
 export default function HeroSection(props: any) {
   return (
     <div className="mt-16 border-t-[3px] h-[calc(100vh-64px)] border-border-custom">
-      <div className="flex flex-col items-center justify-center h-full mx-16 border-l-[3px] border-r-[3px] border-border-custom relative">
+      <div className="flex flex-col items-center justify-center h-full mx-16 border-l-[3px] border-r-[3px] border-border-custom relative pt-2">
         <span className="absolute top-[-6px] left-[-6px] w-2 h-2 bg-light-gray rounded-full" />
         <span className="absolute top-[-6px] right-[-6px] w-2 h-2 bg-light-gray rounded-full" />
         <div className="flex items-center justify-center flex-col gap-4">

@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Source_Code_Pro, Bebas_Neue, Montserrat } from "next/font/google";
-import Header from "../components/Header";
+import LayoutScrollArea from "../components/LayoutScrollArea";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
@@ -114,16 +114,7 @@ export default function RootLayout({
       <body className={`h-screen bg-dark-charcoal overflow-hidden`}>
         <div className="fixed inset-4 border border-dark-charcoal rounded-xl pointer-events-none z-50"></div>
 
-        <div className="h-full p-4">
-          <div className="h-full w-full bg-dark-gray text-white rounded-2xl overflow-y-auto ">
-            <div className="space-y-4">
-              <Header />
-              {/* <Footer /> */}
-              {/* <WhatsAppFloat /> */}
-            </div>
-            <main>{children}</main>
-          </div>
-        </div>
+        <LayoutScrollArea>{children}</LayoutScrollArea>
       </body>
     </html>
   );

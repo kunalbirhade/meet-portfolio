@@ -47,7 +47,13 @@ function Summary() {
         </div>
       </div>
       <div className="relative flex items-center w-full space-x-4">
-        <Image unoptimized={true} src="/about/toon-1.png" alt="Summary" width={190} height={200} />
+        <Image
+          unoptimized={true}
+          src="/about/toon-1.png"
+          alt="Summary"
+          width={190}
+          height={200}
+        />
         <div className="flex flex-col">
           <span className="text-2xl font-bold">INTJ- ARCHITECT</span>
           <span className="font-bold border-t">(MBTI PERSONALITY TYPE)</span>

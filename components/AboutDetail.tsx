@@ -10,6 +10,7 @@ function AboutDetail() {
         title="About"
         subtitle="Curriculum Vitae"
         detailedMode={true}
+        link="/about"
       />
       <hr className="border-border-custom border-b-[3px]" />
       <div className="flex flex-col mx-16 border-l-[3px] border-r-[3px] border-border-custom py-8">

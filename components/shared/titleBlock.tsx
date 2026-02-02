@@ -1,15 +1,20 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "antd/es/typography/Link";
 
 function TitleBlock({
   title,
   subtitle,
   detailedMode = false,
+  link = "/work",
 }: {
   title: string;
   subtitle: string;
   detailedMode?: boolean;
+  link?: string;
 }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="flex py-4 mx-16 border-l-[3px] border-r-[3px] border-border-custom h-full relative">
       <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
@@ -24,14 +29,42 @@ function TitleBlock({
           {subtitle}
         </div>
         {!detailedMode && (
-          <Image
-            unoptimized={true}
-            src="/projects/explore-button.png"
-            alt="explore-work"
-            className="pt-4"
-            width={50}
-            height={50}
-          />
+          <div
+            className="relative h-[50px] max-w-[240px]"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Image
+              unoptimized={true}
+              src={"/projects/explore-button.png"}
+              alt="explore-work"
+              width={50}
+              height={50}
+              className={`absolute left-0 top-0 transition-all duration-800 ease-out ${
+                isHovered
+                  ? " opacity-0 translate-x-full rotate-45 pointer-events-none"
+                  : "opacity-100 scale-100"
+              }`}
+            />
+            <Link
+              href={link}
+              className={`absolute left-0 top-0 flex h-[50px] items-center overflow-hidden transition-opacity duration-1000 ease-out ${
+                isHovered
+                  ? "max-w-[240px] opacity-100"
+                  : "max-w-[50px] opacity-0 pointer-events-none"
+              }`}
+            >
+              <span className="flex items-center gap-4 pl-2.5 pr-4 py-3 text-base font-medium font-montserrat whitespace-nowrap rounded-full border-2 border-white text-white">
+                Click for more
+                <Image
+                  src="/projects/explore-button-hover.png"
+                  alt="explore-work"
+                  width={30}
+                  height={30}
+                />
+              </span>
+            </Link>
+          </div>
         )}
       </div>
     </div>

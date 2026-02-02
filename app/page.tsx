@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import HeroSection from "../components/HeroSection";
-import Highlights from "../components/Highlights";
-import Work from "../components/Work";
-import Playground from "../components/Playground";
-import About from "../components/About";
-import ContactUs from "../components/ContactUs";
+import HomeSections from "../components/HomeSections";
 import playgroundProjects from "./playground/playgroundProjects";
 
 export const metadata: Metadata = {
@@ -63,14 +58,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <>
-      <HeroSection />
-      <Highlights />
-      <Work />
-      <Playground projects={playgroundProjects.slice(0, 6)} />
-      <About />
-      <ContactUs />
-    </>
-  );
+  return <HomeSections playgroundProjects={playgroundProjects} />;
 }

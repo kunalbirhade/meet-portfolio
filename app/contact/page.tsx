@@ -2,11 +2,11 @@ import SectionShell from "../../components/SectionShell";
 import ContactUs from "../../components/ContactUs";
 export const metadata = {
   title: "Contact Us",
-  description: "Get in touch with BIMACME for enquiries and quotes.",
+  description: "Get in touch with Meet Panchal for enquiries and quotes.",
   openGraph: {
-    title: "Get in touch with BIMACME",
-    description: "Send us enquiry",
-    url: "https://bimacme.com/contact",
+    title: "Get in touch with Meet Panchal",
+    description: "Meet Panchal's Curriculum Vitae",
+    url: "https://meetpanchal.com/contact",
   },
 };
 

@@ -10,6 +10,7 @@ function About() {
         title="About"
         subtitle="Curriculum Vitae"
         detailedMode={false}
+        link="/about"
       />
       <hr className="border-border-custom border-b-[3px]" />
       <div className="flex mx-16 border-l-[3px] border-r-[3px] border-border-custom">

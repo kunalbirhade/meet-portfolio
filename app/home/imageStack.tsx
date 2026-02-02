@@ -1,7 +1,7 @@
 import React from "react";
 
 function ImageStack(props: any) {
-  const { className, classNamePlaceholder } = props;
+  const { className } = props;
 
   return (
     <div className={`image-stack w-[20%] relative`}>

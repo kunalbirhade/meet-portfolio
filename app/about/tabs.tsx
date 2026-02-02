@@ -40,7 +40,7 @@ function Tabs() {
             className={`cursor-pointer ${
               activeTab === tab.value
                 ? "text-white underline"
-                : "text-light-gray"
+                : "text-light-gray hover:text-white hover:font-medium transition-all duration-300"
             }`}
           >
             {tab.label}

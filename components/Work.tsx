@@ -32,6 +32,7 @@ function Work({
         title="Work"
         subtitle="A selection of recent projects"
         detailedMode={detailedMode}
+        link="/work"
       />
       {detailedMode && (
         <>

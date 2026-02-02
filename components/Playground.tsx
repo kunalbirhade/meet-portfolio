@@ -26,6 +26,7 @@ function Playground({
         title="Playground"
         subtitle="cross-disciplinary explorations"
         detailedMode={detailedMode}
+        link="/playground"
       />
       {detailedMode && (
         <>
