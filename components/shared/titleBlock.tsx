@@ -57,6 +57,7 @@ function TitleBlock({
               <span className="flex items-center gap-4 pl-2.5 pr-4 py-3 text-base font-medium font-montserrat whitespace-nowrap rounded-full border-2 border-white text-white">
                 Click for more
                 <Image
+                  unoptimized={true}
                   src="/projects/explore-button-hover.png"
                   alt="explore-work"
                   width={30}
