@@ -21,8 +21,8 @@ function Work({
     title?: string;
     description?: string[];
     subtitle?: string;
-    defaultMedia: "image" | "video";
-    hoverMedia: "image" | "video";
+    defaultMedia: "image" | "video" | string;
+    hoverMedia: "image" | "video" | string;
     hoverClass: string;
     hoverClassExtra?: string;
     hoverListClass?: string;
@@ -48,6 +48,7 @@ function Work({
     if (mediaToShow === "video") {
       return (
         <video
+      
           src={src}
           autoPlay
           loop

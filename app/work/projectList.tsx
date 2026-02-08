@@ -19,6 +19,9 @@ const workProjects = [
     subtitle:
       "Construction Management Platform | Digital Transformation Consulting",
     hoverClass: "absolute bottom-0 left-0 min-h-[225px] m-[2px] rounded-b-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
+
   },
   {
     id: 2,
@@ -37,6 +40,8 @@ const workProjects = [
     ],
     subtitle: "Clean India Mission | Energy Transition",
     hoverClass: "absolute bottom-0 left-0 min-h-[155px] m-[2px] rounded-b-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 3,
@@ -52,6 +57,8 @@ const workProjects = [
     subtitle: "Content & Marketing | Creative Consulting",
     hoverClass:
       "absolute bottom-0 left-0 min-h-[150px] m-[2px] w-[calc(100%-4px)] rounded-b-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 4,
@@ -73,6 +80,8 @@ const workProjects = [
       "HazMat Logistics | Digital Platform | B2B industrial logistics solution",
     hoverClass:
       "absolute top-0 left-0 min-h-[150px] m-[2px] w-[calc(100%-4px)] rounded-t-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 5,
@@ -93,6 +102,8 @@ const workProjects = [
     subtitle: "Investment Platform | Crypto-Commodities-Stocks",
     hoverClass:
       "absolute bottom-0 left-0 min-h-[200px] m-[2px] w-[calc(100%-4px)] rounded-b-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 6,
@@ -125,6 +136,7 @@ const workProjects = [
     subtitle: "Pet Platform for Connecting | Pet enthusiasts as a community",
     hoverClass:
       "absolute bottom-0 left-0 min-h-[100px] m-[2px] w-[calc(100%-4px)] rounded-b-md",
+    hoverClassExtra: "",
   },
   {
     id: 8,
@@ -162,7 +174,8 @@ const workProjects = [
     subtitle: "Clean India Mission | Energy Transition",
     hoverClass:
     "absolute left-0 inset-1/2 -translate-y-1/2 h-[300px] m-[2px] w-[calc(100%-4px)] rounded-md",
-
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 10,
@@ -200,6 +213,8 @@ const workProjects = [
     subtitle: "Master Thesis | Management Research",
     hoverClass:
       "absolute bottom-0 left-0 min-h-[100px] m-[2px] w-[calc(100%-4px)] rounded-b-md",
+    hoverClassExtra: "",
+    hoverListClass: "",
   },
   {
     id: 12,
