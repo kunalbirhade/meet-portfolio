@@ -35,8 +35,8 @@ function Work({
     id: number;
     src: string;
     hoverSrc?: string;
-    defaultMedia: "image" | "video";
-    hoverMedia: "image" | "video";
+    defaultMedia: "image" | "video" | string;
+    hoverMedia: "image" | "video" | string;
     hoverClass: string;
     hoverClassExtra?: string;
     hoverListClass?: string;
@@ -100,7 +100,6 @@ function Work({
         <div className=" px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[421px] gap-3">
           {projects.map((item) => {
             const isHovered = hoveredId === item.id;
-            const src = isHovered ? item.hoverSrc : item.src;
             return (
               <div
                 key={item.id}
