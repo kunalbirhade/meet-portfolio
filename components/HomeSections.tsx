@@ -39,13 +39,13 @@ export default function HomeSections({
     <>
       <HeroSection />
       <Highlights />
-      <motion.div style={{ y: workY }}>
+      <motion.div>
         <Work />
       </motion.div>
-      <motion.div style={{ y: playgroundY }}>
+      <motion.div>
         <Playground projects={playgroundProjects.slice(0, 6)} />
       </motion.div>
-      <motion.div style={{ y: aboutY }}>
+      <motion.div>
         <About />
       </motion.div>
       <ContactUs />

@@ -16,7 +16,7 @@ export default function LayoutScrollArea({
       <div className="h-full p-4">
         <div
           ref={scrollRef}
-          className="h-full w-full bg-dark-gray text-white rounded-2xl overflow-y-auto scroll-smooth"
+          className="h-full w-full bg-theme-main text-theme-text rounded-[30px] overflow-y-auto scroll-smooth border-2 border-theme-text"
         >
           <div className="space-y-4">
             <Header />

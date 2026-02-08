@@ -74,7 +74,7 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-1/2 bg-[#272727] text-white py-2 rounded-md hover:bg-[#313131] transition mt-4"
+            className="w-1/2 bg-theme-button text-theme-overlay-text py-2 rounded-md hover:bg-theme-button-hover transition mt-4"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
@@ -83,16 +83,16 @@ export default function ContactPage() {
 
       {/* Popup confirmation */}
       {popup && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-          <div className="bg-white rounded-xl shadow-xl p-8 max-w-sm text-center">
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-theme-modal rounded-xl shadow-xl p-8 max-w-sm text-center text-theme-text">
             <h2 className="text-xl font-semibold mb-3">✅ Thank you!</h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-theme-muted mb-4">
               Your message has been sent successfully. We’ll get back to you
               shortly.
             </p>
             <button
               onClick={() => setPopup(false)}
-              className="bg-[#272727] text-white px-4 py-2 rounded-md hover:bg-[#313131]"
+              className="bg-theme-button text-theme-overlay-text px-4 py-2 rounded-md hover:bg-theme-button-hover"
             >
               Close
             </button>

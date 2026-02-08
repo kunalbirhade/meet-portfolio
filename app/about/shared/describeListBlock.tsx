@@ -4,7 +4,7 @@ function DescribeListBlock({ item, index }: { item: any; index: number }) {
   return (
     <div key={index}>
       <div
-        className={`text-base font-source-code ${item.className ? item.className[0] : ""}`}
+        className={`text-base font-montserrat ${item.className ? item.className[0] : ""}`}
       >
         {item.title}
       </div>

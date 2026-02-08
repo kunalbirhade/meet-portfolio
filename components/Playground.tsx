@@ -12,6 +12,8 @@ function Playground({
     id: number;
     src: string;
     hoverSrc?: string;
+    isVideo?: boolean;
+    videoOnHover?: boolean;
     description: string;
     col: string;
     row: string;
@@ -54,6 +56,8 @@ function Playground({
                 description={item.description}
                 hoverClass={item.hoverClass}
                 hoverText={item.hoverText}
+                isVideo={item.isVideo || false}
+                videoOnHover={item.videoOnHover || false}
               />
             </div>
           ))}

@@ -15,7 +15,7 @@ function Tabs() {
     },
     {
       label: "Work Experience",
-      value: "w orkExperience",
+      value: "workExperience",
       content: <WorkExperience />,
     },
     {
@@ -39,8 +39,8 @@ function Tabs() {
             onClick={() => setActiveTab(tab.value)}
             className={`cursor-pointer ${
               activeTab === tab.value
-                ? "text-white underline"
-                : "text-light-gray hover:text-white hover:font-medium transition-all duration-300"
+                ? "text-[var(--color-text-primary)] font-bold underline"
+                : "text-[var(--color-text-primary)] hover:text-[var(--color-text-primary)] hover:font-bold hover:underline transition-all duration-300"
             }`}
           >
             {tab.label}

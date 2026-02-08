@@ -1,59 +1,78 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useTheme } from "../app/theme/ThemeProvider";
+import Image from "next/image";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="fixed top-6 left-0 right-0 text-center w-full z-50 font-source-code">
-      <div className="w-fit mx-auto px-6 py-2.5 flex justify-center items-center bg-gradient-to-t to-dark-charcoal from-[#18191B] border border-white rounded-xl">
+    <header className="fixed top-6 left-0 right-0 text-center w-full z-50 font-source-code flex items-center justify-center">
+      <div className="w-fit mx-auto px-6 py-2.5 flex justify-center items-center gap-4 bg-gradient-to-t to-dark-charcoal-95 from-dark-gray-95 border border-theme-text rounded-xl">
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 items-center text-base">
+        <nav className="hidden md:flex gap-6 items-center text-base text-theme-text">
           <Link
             href="/"
-            className={`hover:text-gray-400 ${pathname === "/" ? "font-bold" : ""}`}
+            className={`hover:opacity-80 ${pathname === "/" ? "font-bold" : ""}`}
           >
             Home
           </Link>
           <Link
             href="/work"
-            className={`hover:text-gray-400 ${pathname === "/work" ? "font-bold" : ""}`}
+            className={`hover:opacity-80 ${pathname === "/work" ? "font-bold" : ""}`}
           >
             Work
           </Link>
           <Link
             href="/about"
-            className={`hover:text-gray-400 ${pathname === "/about" ? "font-bold" : ""}`}
+            className={`hover:opacity-80 ${pathname === "/about" ? "font-bold" : ""}`}
           >
             About
           </Link>
           <Link
             href="/playground"
-            className={`hover:text-gray-400 ${pathname === "/playground" ? "font-bold" : ""}`}
+            className={`hover:opacity-80 ${pathname === "/playground" ? "font-bold" : ""}`}
           >
             Playground
           </Link>
           <Link
             href="/contact"
-            className={`hover:text-gray-400 ${pathname === "/contact" ? "font-bold" : ""}`}
+            className={`hover:opacity-80 ${pathname === "/contact" ? "font-bold" : ""}`}
           >
             Contact
           </Link>
         </nav>
-
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           className="md:hidden text-gray-700 focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button> */}
+      </div>
+      <div className="absolute right-7">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={
+            theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
+          className="relative w-11 h-6 rounded-full transition-colors duration-300 bg-dark-charcoal border border-theme-text focus:outline-none focus:ring-2 focus:ring-theme-text/50"
+        >
+          <span
+            className={`absolute top-1 inline-flex items-center justify-center w-4 h-4 rounded-full bg-white text-gray-800 shadow-md transition-all duration-300 ease-in-out ${
+              theme === "dark" ? "left-6" : "left-1"
+            }`}
+          >
+            {theme === "dark" ? (
+              <Image unoptimized={true} src="/home/sun.gif" alt="Sun" width={12} height={12} />
+            ) : (
+              <Image unoptimized={true} src="/home/moon.gif" alt="Moon" width={12} height={12} />
+            )}
+          </span>
         </button>
       </div>
 

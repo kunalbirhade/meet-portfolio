@@ -21,10 +21,52 @@ function Work({
     title?: string;
     description?: string[];
     subtitle?: string;
+    defaultMedia: "image" | "video";
+    hoverMedia: "image" | "video";
+    hoverClass: string;
+    hoverClassExtra?: string;
+    hoverListClass?: string;
   }[];
   detailedMode?: boolean;
 }) {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
+
+  const getMediaBlock = (item: {
+    id: number;
+    src: string;
+    hoverSrc?: string;
+    defaultMedia: "image" | "video";
+    hoverMedia: "image" | "video";
+    hoverClass: string;
+    hoverClassExtra?: string;
+    hoverListClass?: string;
+  }) => {
+    const isHovered = hoveredId === item.id;
+    const mediaToShow = isHovered ? item.hoverMedia : item.defaultMedia;
+    const src = isHovered && item.hoverSrc ? item.hoverSrc : item.src;
+
+    if (mediaToShow === "video") {
+      return (
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          className="rounded-lg !h-full !w-full bg-cover object-cover bg-center transition-all duration-2000 bg-white border-2"
+        />
+      );
+    }
+    return (
+      <Image
+        unoptimized={true}
+        src={src}
+        alt="work-1"
+        width={500}
+        height={500}
+        className={`rounded-lg !h-full !w-full transition-all ease-in-out bg-cover bg-center duration-900 ${isHovered ? " bg-white border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
+      />
+    );
+  };
 
   return (
     <div className="relative">
@@ -35,7 +77,7 @@ function Work({
         link="/work"
       />
       {detailedMode && (
-        <>
+        <div className="relative">
           <hr className="border-border-custom border-b-[3px]" />
           <div className="flex px-4 py-6 mx-16 border-l-[3px] border-r-[3px] border-border-custom text-xl font-montserrat text-light-gray min-h-[200px] relative">
             A selection of recent professional work informed by strategic
@@ -50,7 +92,7 @@ function Work({
             <span className="absolute bottom-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
             <span className="absolute bottom-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
           </div>
-        </>
+        </div>
       )}
       <hr className="border-border-custom border-b-[3px]" />
       <div className="flex py-4 mx-16 border-l-[3px] border-r-[3px] border-border-custom">
@@ -65,22 +107,16 @@ function Work({
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                <Image
-                  unoptimized={true}
-                  src={src}
-                  alt={item.id.toString()}
-                  className={`${item.className} rounded-xl `}
-                  height={item.height ? item.height : 500}
-                  width={item.width ? item.width : 500}
-                />
+                {getMediaBlock(item)}
+
                 {isHovered && (
-                  <div className="w-full bg-dark-charcoal absolute bottom-0 left-0 px-3 py-4 rounded-b-xl">
-                    <div className="flex justify-between">
-                      <div className="text-[#EEEEEE] text-[22px] font-montserrat flex-wrap">
+                  <div className={`flex flex-col justify-between bg-dark-charcoal px-3 py-4 ${item.hoverClass}`}>
+                    <div className={`flex justify-between w-full ${item.hoverClassExtra}`}>
+                      <div className="text-theme-overlay-text text-[22px] font-montserrat flex-wrap w-2/12">
                         {item.title}
                       </div>
-                      <div className="text-[#EEEEEE] text-base font-source-code text-right w-11/12 font-extralight">
-                        <ul className="list-disc list-inside">
+                      <div className="text-theme-overlay-text text-base font-source-code text-right w-9/12 font-extralight">
+                        <ul className={`list-disc list-inside ${item.hoverListClass}`}>
                           {item.description.map((description, index) => (
                             <li key={index}>{description}</li>
                           ))}

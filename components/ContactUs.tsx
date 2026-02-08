@@ -115,12 +115,12 @@ function ContactUs({ detailedMode = false }: { detailedMode?: boolean }) {
               >
                 <FileIcon className="w-6 h-6" /> Download Resume
               </Link>
-              <Link
+              {/* <Link
                 href="/terms-and-conditions"
                 className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 <FileIcon className="w-6 h-6" /> Terms and Conditions
-              </Link>
+              </Link> */}
             </span>
           </div>
           <div className="flex items-start flex-wrap justify-start gap-4 flex-col mt-4">

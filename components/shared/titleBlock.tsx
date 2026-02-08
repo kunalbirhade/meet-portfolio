@@ -54,7 +54,7 @@ function TitleBlock({
                   : "max-w-[50px] opacity-0 pointer-events-none"
               }`}
             >
-              <span className="flex items-center gap-4 pl-2.5 pr-4 py-3 text-base font-medium font-montserrat whitespace-nowrap rounded-full border-2 border-white text-white">
+              <span className="flex items-center gap-4 pl-2.5 pr-4 py-3 text-base font-medium font-montserrat whitespace-nowrap rounded-full border-2 border-theme-text text-theme-text">
                 Click for more
                 <Image
                   unoptimized={true}

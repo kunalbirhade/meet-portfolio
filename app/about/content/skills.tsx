@@ -51,8 +51,8 @@ const softSkillsList = [
   {
     title: "Soft Skills",
     className: [
-      "!text-2xl !font-bold !font-source-code !text-[#EEEEEE]",
-      "!text-xl !font-source-code font-light !text-[#EEEEEE]",
+      "!text-2xl !font-montserrat ",
+      "!text-xl !font-source-code text-[var(--color-light-bg)]",
     ],
     points: [
       "Integrity",
@@ -72,8 +72,8 @@ const softSkillsList = [
   {
     title: "Digital Environments:",
     className: [
-      "!text-xl !font-bold !font-source-code !text-[#EEEEEE]",
-      "!text-lg font-light !font-source-code !text-[#EEEEEE]",
+      "!text-xl !font-montserrat ",
+      "!text-lg !font-source-code text-[var(--color-light-bg)]",
     ],
     description:
       "Visual rendrerings, BIM, Common Data Environments, IoT, 3D Visualisation, Product Modelling, Design Conceptualisation",
@@ -82,12 +82,12 @@ const softSkillsList = [
 
 function Skills() {
   return (
-    <div className="bg-gradient-to-b from-[#000000] to-[#18191B] py-8 px-10 rounded-lg font-source-code text-base">
+    <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] py-8 px-10 rounded-lg font-source-code text-base">
       <div className="grid grid-cols-7 gap-5">
         <div className="col-span-2 flex flex-col gap-4">
           {skillsList.map((skill) => (
             <div key={skill.title} className="flex flex-col">
-              <div className="text-2xl font-bold font-source-code text-[#EEEEEE]">
+              <div className="text-2xl font-montserrat">
                 {skill.title}
               </div>
               <div className="text-xl font-source-code text-light-gray">
@@ -104,10 +104,10 @@ function Skills() {
         <div className="col-span-2 flex flex-col gap-4">
           {certificationList.map((certification) => (
             <div key={certification.title} className="flex flex-col">
-              <div className="text-xl font-source-code text-[#EEEEEE]">
+              <div className="text-xl font-montserrat">
                 {certification.title}
               </div>
-              <div className="text-xl font-source-code text-light-gray">
+              <div className="text-xl font-source-code text-[var(--color-light-bg)]">
                 - {certification.description}
               </div>
             </div>

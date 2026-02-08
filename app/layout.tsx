@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Source_Code_Pro, Bebas_Neue, Montserrat } from "next/font/google";
 import LayoutScrollArea from "../components/LayoutScrollArea";
+import { ThemeProvider } from "./theme/ThemeProvider";
+import { ThemeScript } from "./theme/theme-script";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
@@ -105,16 +107,18 @@ export default function RootLayout({
       className={`${sourceCodePro.variable} ${montserrat.variable} ${bebasNeue.variable}`}
     >
       <head>
+        <ThemeScript />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`h-screen bg-dark-charcoal overflow-hidden`}>
-        <div className="fixed inset-4 border border-dark-charcoal rounded-xl pointer-events-none z-50"></div>
-
-        <LayoutScrollArea>{children}</LayoutScrollArea>
+      <body className="h-screen bg-theme-page overflow-hidden">
+        <div className="fixed border border-theme-page rounded-xl pointer-events-none z-50" />
+        <ThemeProvider>
+          <LayoutScrollArea>{children}</LayoutScrollArea>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -77,7 +77,7 @@ function WorkExperience() {
   return (
     <div className="rounded-lg font-source-code text-base">
       <div className="grid grid-cols-4 gap-4">
-        <div className="col-span-1 bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+        <div className="col-span-1 bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
           <AboutBlock
             title="CREATIVE STRATEGIST"
             description="JUN 2023 - PRESENT"
@@ -97,7 +97,7 @@ function WorkExperience() {
         </div>
 
         <div className="col-span-1 flex flex-col">
-          <div className="bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+          <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
             <AboutBlock
               title="PRODUCT RESEARCH"
               description="OCT 2018 - MAR 2019"
@@ -114,7 +114,7 @@ function WorkExperience() {
               {contentInfo.aasaan}
             </div>
           </div>
-          <div className="bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+          <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
             <AboutBlock
               title="PROPOSAL MANAGER"
               description="OCT 2024 - MAR 2025"
@@ -130,7 +130,7 @@ function WorkExperience() {
           </div>
         </div>
         <div className="col-span-1 flex flex-col">
-          <div className="bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+          <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
             <AboutBlock
               title="PROGRAM ASSISTANT"
               description="DEC 2024- PRESENT"
@@ -147,7 +147,7 @@ function WorkExperience() {
               {contentInfo.uoh}
             </div>
           </div>
-          <div className="bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+          <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
             <AboutBlock
               title="REAL-ESTATE INTERN"
               description="JUN 2017 - DEC 2017"
@@ -163,7 +163,7 @@ function WorkExperience() {
           </div>
         </div>
         <div className="col-span-1 flex flex-col">
-          <div className="bg-gradient-to-b from-[#000000] to-[#18191B] rounded-3xl p-4 gap-4 flex flex-col">
+          <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
             <AboutBlock
               title="PROJECT MANAGER"
               description="APR 2020 - JUL 2022"

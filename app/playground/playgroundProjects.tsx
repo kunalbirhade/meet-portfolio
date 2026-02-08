@@ -15,7 +15,7 @@ const items = [
   {
     id: 2,
     src: "/playground/ex-stadium/tile.png",
-    hoverSrc: "/playground/ex-stadium/tile.png",
+    hoverSrc: "/playground/ex-stadium/hover.png",
     description:
       "Excelsior Stadium, Rotterdam | International Property Week | Industry-Academic Collaboration",
     col: "col-span-1",
@@ -28,7 +28,7 @@ const items = [
   {
     id: 3,
     src: "/playground/mad/tile.png",
-    hoverSrc: "/playground/mad/tile.png",
+    hoverSrc: "/playground/mad/hover.png",
     description:
       "MAD- Alternative material design studio | Marketing Campaigns | Funding Pitch (upcoming)",
     col: "col-span-1",
@@ -67,7 +67,7 @@ const items = [
   {
     id: 6,
     src: "/playground/giant/tile.png",
-    hoverSrc: "/playground/giant/tile.png",
+    hoverSrc: "/playground/giant/hover.png",
     description:
       "German Indian Academic Network for Tomorrow (GIANT) | DAAD funding proposal",
     col: "col-span-1",
@@ -79,8 +79,10 @@ const items = [
   },
   {
     id: 7,
+    isVideo: true,
+    videoOnHover: true,
     src: "/playground/karigarshala/tile.png",
-    hoverSrc: "/playground/karigarshala/hover.gif",
+    hoverSrc: "/playground/karigarshala/hover.mp4",
     description:
       "Featured: Kaarigarshala | Architecture Project | Academic Work",
     col: "col-span-1",
@@ -106,7 +108,9 @@ const items = [
   {
     id: 9,
     src: "/playground/bairro/tile.png",
-    hoverSrc: "/playground/bairro/hover.gif",
+    hoverSrc: "/playground/bairro/hover.mp4",
+    isVideo: true,
+    videoOnHover: true,
     description:
       "Real Estate Strategy | Project visualisation and Execution | Marketing Campaigns",
     col: "col-span-1",
@@ -118,8 +122,10 @@ const items = [
   },
   {
     id: 10,
+    isVideo: true,
+    videoOnHover: true,
     src: "/playground/goa-heritage/tile.png",
-    hoverSrc: "/playground/goa-heritage/hover.gif",
+    hoverSrc: "/playground/goa-heritage/hover.mp4",
     description:
       "Heritage Architecture | Real Estate pitch | Conservation project at cultural heart of Goa",
     col: "col-span-1",
@@ -170,8 +176,10 @@ const items = [
   },
   {
     id: 14,
+    isVideo: true,
+    videoOnHover: true,
     src: "/playground/vida/tile.png",
-    hoverSrc: "/playground/vida/hover.gif",
+    hoverSrc: "/playground/vida/hover.mp4",
     description:
       "VIDA’ Bistro | Design visualisation of the project | Interiors and branded environments ",
     col: "col-span-1",
@@ -197,7 +205,9 @@ const items = [
   {
     id: 16,
     src: "/playground/villa-terra/tile.png",
-    hoverSrc: "/playground/villa-terra/hover.png",
+    hoverSrc: "/playground/villa-terra/hover.mp4",
+    isVideo: true,
+    videoOnHover: true,
     description:
       "Villa Terra Viva | Conservation architecture project | Real Estate revamp",
     col: "col-span-1",
