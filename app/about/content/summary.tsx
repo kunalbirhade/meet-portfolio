@@ -4,7 +4,7 @@ import React from "react";
 function Summary() {
   return (
     <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)]  px-16 py-20 rounded-lg font-source-code text-base">
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-5 gap-4 min-h-[35rem]">
         <p className="col-span-4 pr-12 text-left whitespace-break-spaces ">
           For nearly a decade, I’ve worked with people across academia,
           corporate environments, startups, and freelance settings. This
@@ -59,9 +59,7 @@ function Summary() {
           <span className="font-bold border-t">(MBTI PERSONALITY TYPE)</span>
         </div>
         <div className="flex items-center justify-center pl-12">
-          <span
-            className="text-8xl font-regular bg-gradient-to-r from-[var(--color-text-primary)] to-[var(--color-hero-stroke)] bg-clip-text text-transparent font-bebasNeue tracking-widest" 
-          >
+          <span className="text-8xl font-regular bg-gradient-to-r from-[var(--color-text-primary)] to-[var(--color-hero-stroke)] bg-clip-text text-transparent font-bebasNeue tracking-widest">
             POLYMATH
           </span>
         </div>

@@ -47,7 +47,7 @@ function Tabs() {
           </span>
         ))}
       </div>
-      <div className="border-border-custom mx-5">
+      <div className="border-border-custom mx-5 h-[62rem] min-h-[54rem]">
         {tabs.find((tab) => tab.value === activeTab)?.content}
       </div>
     </div>

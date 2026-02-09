@@ -5,7 +5,8 @@ import { useTheme } from "../app/theme/ThemeProvider";
 
 export default function HeroSection(props: any) {
   const { theme } = useTheme();
-  const heroBgSrc = theme === "dark" ? "/home/dark-bg.png" : "/home/light-bg.png";
+  const heroBgSrc =
+    theme === "dark" ? "/home/dark-bg.png" : "/home/light-bg.png";
 
   return (
     <div className="relative">
@@ -18,7 +19,7 @@ export default function HeroSection(props: any) {
               alt="Meet Panchal"
               width={175}
               height={35}
-              className="rounded-full border-2"
+              className="rounded-full border-2 border-theme-hero-stroke bg-dark-charcoal"
             />
             <h1 className="text-7xl  font-normal font-bebasNeue">
               MEET PANCHAL
@@ -72,6 +73,7 @@ export default function HeroSection(props: any) {
                 alt="hero-loading"
                 width={100}
                 height={10}
+                className="opacity-50"
               />
               <Image
                 unoptimized={true}
@@ -79,6 +81,7 @@ export default function HeroSection(props: any) {
                 alt="hero-loading"
                 width={100}
                 height={10}
+                className="opacity-50"
               />
               <Image
                 unoptimized={true}
@@ -86,6 +89,7 @@ export default function HeroSection(props: any) {
                 alt="hero-loading"
                 width={100}
                 height={10}
+                className="opacity-50"
               />
             </div>
             <div className="flex items-center justify-center font-bebasNeue text-6xl text-[var(--color-border-custom)] [-webkit-text-stroke:1px_var(--color-hero-stroke)]">

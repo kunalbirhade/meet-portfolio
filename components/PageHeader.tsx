@@ -20,6 +20,7 @@ export default function PageHeader({
             </div>
             <div className="flex items-center justify-center gap-0 absolute top-0 left-0 right-0 bottom-0">
               <Image
+                className="opacity-50"
                 unoptimized={true}
                 src="/home/hero-loading.gif"
                 alt="hero-loading"
@@ -27,6 +28,7 @@ export default function PageHeader({
                 height={10}
               />
               <Image
+                className="opacity-50"
                 unoptimized={true}
                 src="/home/hero-loading.gif"
                 alt="hero-loading"
@@ -34,6 +36,7 @@ export default function PageHeader({
                 height={10}
               />
               <Image
+                className="opacity-50"
                 unoptimized={true}
                 src="/home/hero-loading.gif"
                 alt="hero-loading"

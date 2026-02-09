@@ -14,7 +14,7 @@ A personal portfolio website built with **Next.js 14**, showcasing work, project
 
 ## Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ## Getting Started
@@ -53,13 +53,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-| Command | Description |
-|--------|-------------|
-| `npm run dev` | Start the development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start the production server (run after `build`) |
-| `npm run lint` | Run Next.js ESLint |
-| `npm run format` | Format code with Prettier |
+| Command          | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `npm run dev`    | Start the development server                    |
+| `npm run build`  | Build for production                            |
+| `npm run start`  | Start the production server (run after `build`) |
+| `npm run lint`   | Run Next.js ESLint                              |
+| `npm run format` | Format code with Prettier                       |
 
 ## Project Structure
 

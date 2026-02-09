@@ -10,9 +10,10 @@ export default function Header() {
 
   return (
     <header className="fixed top-6 left-0 right-0 text-center w-full z-50 font-source-code flex items-center justify-center">
-      <div className="w-fit mx-auto px-6 py-2.5 flex justify-center items-center gap-4 bg-gradient-to-t to-dark-charcoal-95 from-dark-gray-95 border border-theme-text rounded-xl">
+      <div className="w-fit mx-auto px-6 py-2.5 flex justify-center items-center gap-4 border-2 border-theme-text rounded-xl relative">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t to-dark-charcoal-95 from-dark-gray-95 z-0 blur-sm rounded-xl"></div>
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 items-center text-base text-theme-text">
+        <nav className="hidden md:flex gap-6 items-center text-base text-theme-text z-10">
           <Link
             href="/"
             className={`hover:opacity-80 ${pathname === "/" ? "font-bold" : ""}`}
@@ -63,14 +64,26 @@ export default function Header() {
           className="relative w-11 h-6 rounded-full transition-colors duration-300 bg-dark-charcoal border border-theme-text focus:outline-none focus:ring-2 focus:ring-theme-text/50"
         >
           <span
-            className={`absolute top-1 inline-flex items-center justify-center w-4 h-4 rounded-full bg-white text-gray-800 shadow-md transition-all duration-300 ease-in-out ${
+            className={`absolute top-[0.2rem] inline-flex items-center justify-center w-4 h-4 rounded-full bg-white text-gray-800 shadow-md transition-all duration-300 ease-in-out ${
               theme === "dark" ? "left-6" : "left-1"
             }`}
           >
             {theme === "dark" ? (
-              <Image unoptimized={true} src="/home/sun.gif" alt="Sun" width={12} height={12} />
+              <Image
+                unoptimized={true}
+                src="/home/sun.gif"
+                alt="Sun"
+                width={12}
+                height={12}
+              />
             ) : (
-              <Image unoptimized={true} src="/home/moon.gif" alt="Moon" width={12} height={12} />
+              <Image
+                unoptimized={true}
+                src="/home/moon.gif"
+                alt="Moon"
+                width={12}
+                height={12}
+              />
             )}
           </span>
         </button>

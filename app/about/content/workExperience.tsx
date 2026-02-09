@@ -76,7 +76,7 @@ const contentInfo = {
 function WorkExperience() {
   return (
     <div className="rounded-lg font-source-code text-base">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-2">
         <div className="col-span-1 bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl p-4 gap-4 flex flex-col">
           <AboutBlock
             title="CREATIVE STRATEGIST"

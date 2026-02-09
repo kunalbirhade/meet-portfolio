@@ -48,7 +48,6 @@ function Work({
     if (mediaToShow === "video") {
       return (
         <video
-      
           src={src}
           autoPlay
           loop
@@ -64,7 +63,7 @@ function Work({
         alt="work-1"
         width={500}
         height={500}
-        className={`rounded-lg !h-full !w-full transition-all ease-in-out bg-cover bg-center duration-900 ${isHovered ? " bg-white border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
+        className={`rounded-lg !h-full !w-full transition-all ease-in-out duration-900 bg-white ${isHovered ? "  border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
       />
     );
   };
@@ -88,8 +87,8 @@ function Work({
             understanding, and technological awareness to navigate complexity,
             align intent with impact, and shape solutions that are both
             thoughtful and effective.
-            <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-            <span className="absolute top-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            {/* <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute top-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" /> */}
             <span className="absolute bottom-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
             <span className="absolute bottom-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
           </div>
@@ -97,28 +96,41 @@ function Work({
       )}
       <hr className="border-border-custom border-b-[3px]" />
       <div className="flex py-4 mx-16 border-l-[3px] border-r-[3px] border-border-custom">
-        <div className=" px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[421px] gap-3">
+        <div className=" px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[23vw] gap-3">
           {projects.map((item) => {
             const isHovered = hoveredId === item.id;
             return (
               <div
                 key={item.id}
-                className={`${item.col} ${item.row} rounded-xl relative`}
+                className={`${item.col} ${item.row} rounded-lg relative`}
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
                 {getMediaBlock(item)}
 
                 {isHovered && (
-                  <div className={`flex flex-col justify-between bg-dark-charcoal px-3 py-4 ${item.hoverClass}`}>
-                    <div className={`flex justify-between w-full ${item.hoverClassExtra}`}>
-                      <div className="text-theme-overlay-text text-[22px] font-montserrat flex-wrap w-2/12">
+                  <div
+                    className={`flex flex-col justify-between bg-dark-charcoal px-2 py-4 ${item.hoverClass}`}
+                  >
+                    <div
+                      className={`flex justify-between w-full ${item.hoverClassExtra}`}
+                    >
+                      <div
+                        className={`text-theme-overlay-text text-[1.375em] font-montserrat flex-wrap ${item.hoverClassExtra ? "w-full" : "w-[35%] word-break-keep-all"}`}
+                      >
                         {item.title}
                       </div>
-                      <div className="text-theme-overlay-text text-base font-source-code text-right w-9/12 font-extralight">
-                        <ul className={`list-disc list-inside ${item.hoverListClass}`}>
+                      <div
+                        className={`text-theme-overlay-text text-base font-source-code text-right font-extralight ${item.hoverClassExtra ? "w-full" : "w-[60%]"}`}
+                      >
+                        <ul className={`list-none ${item.hoverListClass}`}>
                           {item.description.map((description, index) => (
-                            <li key={index}>{description}</li>
+                            <li
+                              className="before:content-['•'] before:mr-1"
+                              key={index}
+                            >
+                              {description}
+                            </li>
                           ))}
                         </ul>
                       </div>
