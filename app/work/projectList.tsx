@@ -173,7 +173,7 @@ const workProjects = [
     description: ["Proposal", "Curating", "Content Strategy", "Digital Media"],
     subtitle: "Clean India Mission | Energy Transition",
     hoverClass:
-      "absolute left-0 inset-1/2 -translate-y-[60%] min-h-[16vw] border-l-[2px] border-r-[2px] w-full rounded-md",
+      "absolute left-0 inset-1/2 -translate-y-[60%] min-h-[16vw] border-l-[2px] border-r-[2px] w-full",
     hoverClassExtra: "",
     hoverListClass: "",
   },
