@@ -82,7 +82,7 @@ const softSkillsList = [
 
 function Skills() {
   return (
-    <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] py-8 px-10 rounded-lg font-source-code text-base">
+    <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] py-8 px-10 rounded-current font-source-code text-base">
       <div className="grid grid-cols-7 gap-5 min-h-[54rem]">
         <div className="col-span-2 flex flex-col gap-4">
           {skillsList.map((skill) => (

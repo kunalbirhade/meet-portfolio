@@ -52,7 +52,7 @@ function Work({
           autoPlay
           loop
           muted
-          className="rounded-lg !h-full !w-full bg-cover object-cover bg-center transition-all duration-2000 bg-white border-2"
+          className="rounded-current !h-full !w-full bg-cover object-cover bg-center transition-all duration-2000 bg-white border-2"
         />
       );
     }
@@ -63,7 +63,7 @@ function Work({
         alt="work-1"
         width={500}
         height={500}
-        className={`rounded-lg !h-full !w-full transition-all ease-in-out duration-900 bg-white ${isHovered ? "  border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
+        className={`rounded-current !h-full !w-full transition-all ease-in-out duration-900 bg-white ${isHovered ? "  border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
       />
     );
   };
@@ -116,7 +116,7 @@ function Work({
                       className={`flex justify-between w-full ${item.hoverClassExtra}`}
                     >
                       <div
-                        className={`text-theme-overlay-text text-[1.375em] font-montserrat flex-wrap ${item.hoverClassExtra ? "w-full" : "w-[35%] word-break-keep-all"}`}
+                        className={`text-theme-overlay-text text-[1.375em] font-montserrat flex-wrap ${item.hoverClassExtra ? "w-full" : "w-[35%] break-words"}`}
                       >
                         {item.title}
                       </div>

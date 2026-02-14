@@ -3,7 +3,7 @@ import React from "react";
 
 function Summary() {
   return (
-    <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)]  px-16 py-20 rounded-lg font-source-code text-base">
+    <div className="bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)]  px-16 py-20 rounded-current font-source-code text-base">
       <div className="grid grid-cols-5 gap-4 min-h-[35rem]">
         <p className="col-span-4 pr-12 text-left whitespace-break-spaces ">
           For nearly a decade, I’ve worked with people across academia,

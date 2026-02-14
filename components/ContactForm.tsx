@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { BadgeCheckIcon, CrossIcon, XIcon } from "lucide-react";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ email: "", message: "" });
@@ -84,18 +84,22 @@ export default function ContactPage() {
       {/* Popup confirmation */}
       {popup && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          <div className="bg-theme-modal rounded-xl shadow-xl p-8 max-w-sm text-center text-theme-text">
-            <h2 className="text-xl font-semibold mb-3">✅ Thank you!</h2>
-            <p className="text-theme-muted mb-4">
-              Your message has been sent successfully. We’ll get back to you
-              shortly.
-            </p>
-            <button
-              onClick={() => setPopup(false)}
-              className="bg-theme-button text-theme-overlay-text px-4 py-2 rounded-md hover:bg-theme-button-hover"
-            >
-              Close
-            </button>
+          <div className="relative">
+            <div className="absolute top-4 right-4">
+              <XIcon
+                className="w-6 h-6 cursor-pointer text-theme-text hover:bg-dark-gray rounded-full p-1"
+                onClick={() => setPopup(false)}
+              />
+            </div>
+            <div className="bg-dark-charcoal rounded-xl shadow-xl p-8 max-w-sm text-center text-theme-text">
+              <div className="flex items-center justify-center mb-4">
+                <BadgeCheckIcon className="w-12 h-12" />
+              </div>
+              <h2 className="text-xl font-semibold mb-3">Thank you!</h2>
+              <p className="text-theme-muted mb-4">
+                Recieved your message. I'll get back to you shortly.
+              </p>
+            </div>
           </div>
         </div>
       )}

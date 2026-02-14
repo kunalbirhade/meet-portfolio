@@ -22,28 +22,38 @@ function Tile({
   const [isHovered, setIsHovered] = useState(false);
 
   const getMediaBlock = () => {
-    console.log(isVideo, videoOnHover);
-    if (isVideo && videoOnHover && isHovered) {
-      return (
-        <video
-          src={isHovered ? hoverSrc : src}
-          autoPlay
-          loop
-          muted
-          className="rounded-lg !h-full bg-cover object-cover bg-center transition-all duration-800 bg-white border-2"
-        />
-      );
-    }
+    const isShowVideo = isVideo && videoOnHover && isHovered;
+    const showImage = !isShowVideo;
+    const imageSrc = isHovered ? hoverSrc : src;
+
     return (
-      <Image
-        unoptimized={true}
-        src={isHovered ? hoverSrc : src}
-        alt="work-1"
-        width={500}
-        height={500}
-        // className={`rounded-lg !h-[400px] transition-all ease-in-out duration-900 ${isHovered ? " bg-white border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
-        className={`rounded-lg !h-full transition-all ease-in-out duration-900 ${isHovered ? " bg-white border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
-      />
+      <div className="relative w-full h-[21rem] rounded-current border-2 overflow-hidden border-border-custom bg-white hover:border-[--color-hover-bg]">
+        {isVideo && videoOnHover && (
+          <video
+            key="hover-video"
+            src={hoverSrc}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className={`absolute inset-0 w-full h-full transition-opacity object-cover bg-center duration-300 ease-out pointer-events-none ${
+              isShowVideo ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          />
+        )}
+        <Image
+          unoptimized={true}
+          objectFit="cover"
+          src={imageSrc}
+          alt="work-1"
+          width={500}
+          height={500}
+          className={`object-cover transition-opacity duration-300 ease-out pointer-events-none !h-full !w-full ${
+            showImage ? "opacity-100 z-10" : "opacity-0 z-0"
+          } ${isHovered ? "bg-white" : ""}`}
+        />
+      </div>
     );
   };
 
@@ -53,8 +63,8 @@ function Tile({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {getMediaBlock()}
-      <div className="flex flex-col items-start justify-start px-3 pt-4 min-h-40 transition-transform duration-900">
+      <div className="w-full">{getMediaBlock()}</div>
+      <div className="flex flex-col items-start justify-start px-3 pt-4 min-h-40 transition-transform">
         {isHovered ? (
           <p className={hoverClass}>{hoverText}</p>
         ) : (

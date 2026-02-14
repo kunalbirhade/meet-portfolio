@@ -42,6 +42,7 @@
   --color-modal-bg: #ffffff;
   --color-dark-bg: #000000;
   --color-light-bg: #787878;
+  --color-hover-bg: #eeeeee;
   --bg: var(--color-main-bg);
   --muted: var(--color-muted);
   --primary: var(--color-text-primary);
@@ -83,6 +84,7 @@
   --color-modal-bg: #ffffff;
   --color-dark-bg: #ffffff;
   --color-light-bg: #787878;
+  --color-hover-bg: #272727;
   --bg: var(--color-main-bg);
   --muted: var(--color-muted);
   --primary: var(--color-text-primary);

@@ -92,10 +92,10 @@ const contentInfo = [
 
 function Education() {
   return (
-    <div className="rounded-lg font-source-code text-base">
+    <div className="rounded-current font-source-code text-base">
       <div className="grid grid-cols-3 gap-4 min-h-[54rem]">
         {contentInfo.map((item, index) => (
-          <div className="col-span-1 bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-3xl gap-4 flex flex-col px-7 pt-5 pb-12">
+          <div className="col-span-1 bg-gradient-to-b from-[var(--color-dark-bg)] to-[var(--color-main-bg)] rounded-current gap-4 flex flex-col px-7 pt-5 pb-12">
             <ImageBlock
               image={item.logo}
               description={item.url}

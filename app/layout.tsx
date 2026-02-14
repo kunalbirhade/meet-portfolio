@@ -44,9 +44,9 @@ const jsonLd = {
 export const metadata: Metadata = {
   title: {
     default: "Meet Panchal | Portfolio",
-    template: "%s - Meet Panchal",
+    template: "Meet Panchal | %s",
   },
-  description: "Meet Panchal is expert in Business + design + Technology.",
+  description: "Business + design + Technology.",
   keywords: [
     "Creative strategist",
     "Digital Transformation Enthusiast",

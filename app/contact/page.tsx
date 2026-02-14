@@ -1,7 +1,7 @@
 import SectionShell from "../../components/SectionShell";
 import ContactUs from "../../components/ContactUs";
 export const metadata = {
-  title: "Contact Us",
+  title: "Contact Me",
   description: "Get in touch with Meet Panchal for enquiries and quotes.",
   openGraph: {
     title: "Get in touch with Meet Panchal",

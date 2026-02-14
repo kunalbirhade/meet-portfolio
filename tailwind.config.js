@@ -40,6 +40,9 @@ module.exports = {
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         bebasNeue: ["var(--font-bebasNeue)", "sans-serif"],
       },
+      borderRadius: {
+        current: "1.25rem",
+      },
     },
   },
   plugins: [],

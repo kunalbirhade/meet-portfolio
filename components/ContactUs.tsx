@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   ArrowUpRightIcon,
   AtSignIcon,
-  FileIcon,
+  CircleArrowDownIcon,
   PhoneIcon,
 } from "lucide-react";
 import ContactForm from "./ContactForm";
@@ -76,44 +76,46 @@ function ContactUs({ detailedMode = false }: { detailedMode?: boolean }) {
             <span className="text-lg font-montserrat flex items-center justify-start gap-4 w-1/3 flex-wrap">
               <Link
                 href="/"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 Home
                 <ArrowUpRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href="/work"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 Work
                 <ArrowUpRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href="/playground"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 Playground
                 <ArrowUpRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href="/about"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 About
                 <ArrowUpRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href="/contact"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
                 Contact
                 <ArrowUpRightIcon className="w-4 h-4" />
               </Link>
               <Link
-                href="/resume"
-                className="text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
+                download="Meet_Panchal_Resume.pdf"
+                href="/Meet_Panchal_Resume.pdf"
+                target="_blank"
+                className="hover:text-theme-main text-base flex items-center justify-center gap-2 bg-dark-charcoal px-8 py-3 rounded-full font-montserrat hover:bg-light-gray transition-colors duration-200"
               >
-                <FileIcon className="w-6 h-6" /> Download Resume
+                <CircleArrowDownIcon className="w-4 h-4" /> Download Resume
               </Link>
               {/* <Link
                 href="/terms-and-conditions"
