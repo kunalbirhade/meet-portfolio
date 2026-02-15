@@ -13,8 +13,9 @@ function AboutDetail() {
         link="/about"
       />
       <hr className="border-border-custom border-b-[3px]" />
-      <div className="flex flex-col mx-16 border-l-[3px] border-r-[3px] border-border-custom py-8">
+      <div className="flex flex-col sm:mx-16 mx-4 border-l-[3px] border-r-[3px] border-border-custom py-8">
         <PersonalDetails />
+        <hr className="border-border-custom border-b-[3px] sm:hidden block" />
         <Tabs />
       </div>
     </div>

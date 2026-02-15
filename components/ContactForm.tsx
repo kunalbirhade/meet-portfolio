@@ -40,7 +40,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-full flex flex-col items-start justify-center w-full">
-      <div className="w-full max-w-full p-6 rounded-xl text-center">
+      <div className="w-full max-w-full sm:p-6 p-0 rounded-xl text-center">
         <form onSubmit={handleSubmit} className="pb-5 w-full ">
           <div className="flex flex-col items-start justify-center gap-2 ">
             <label htmlFor="email" className="text-left text-lg font-inter">

@@ -16,11 +16,11 @@ function TitleBlock({
 }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="flex py-4 mx-16 border-l-[3px] border-r-[3px] border-border-custom h-full relative">
-      <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-      <span className="absolute top-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-      <span className="absolute bottom-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-      <span className="absolute bottom-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+    <div className="flex py-4 sm:mx-16 mx-4 border-l-[3px] border-r-[3px] border-border-custom h-full relative">
+      <span className="absolute top-[-0.35rem] left-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+      <span className="absolute top-[-0.35rem] right-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+      <span className="absolute bottom-[-0.35rem] left-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+      <span className="absolute bottom-[-0.35rem] right-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
       <div className="flex w-full h-full p-2 flex-col gap-3">
         <div className="flex w-full h-full font-bebasNeue text-5xl">
           {title}
@@ -30,7 +30,7 @@ function TitleBlock({
         </div>
         {!detailedMode && (
           <div
-            className="relative h-[50px] max-w-[240px]"
+            className="relative h-[52px] max-w-[240px] py-2"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -48,20 +48,20 @@ function TitleBlock({
             />
             <Link
               href={link}
-              className={`absolute left-0 top-0 flex h-[50px] items-center overflow-hidden transition-opacity duration-1000 ease-out ${
+              className={`absolute left-0 top-0 flex h-[50px] items-center overflow-hidden transition-all duration-800 ease-out ${
                 isHovered
                   ? "max-w-[240px] opacity-100"
                   : "max-w-[50px] opacity-0 pointer-events-none"
               }`}
             >
-              <span className="flex items-center gap-4 pl-2.5 pr-4 py-3 text-base font-medium font-montserrat whitespace-nowrap rounded-full border-2 border-theme-text text-theme-text">
+              <span className="flex items-center gap-4 pl-2.5 pr-4 py-[10px] text-base font-medium font-montserrat whitespace-nowrap rounded-full text-theme-text border-2 border-theme-text">
                 Click for more
                 <Image
                   unoptimized={true}
                   src="/projects/explore-button-hover.png"
                   alt="explore-work"
                   width={30}
-                  height={30}
+                  height={29}
                 />
               </span>
             </Link>

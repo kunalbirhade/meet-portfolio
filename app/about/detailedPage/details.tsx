@@ -4,13 +4,13 @@ import competenciesList from "./competencies-list";
 
 function PersonalDetails() {
   return (
-    <div className="flex py-4 px-10">
-      <div className="w-full grid grid-cols-3 gap-10">
-        <div className="col-span-2 w-4/5">
-          <div className="text-5xl font-bebasNeue py-4 text-[#EEEEEE] w-3/4 border-b border-[#565656]">
+    <div className="flex py-4 sm:px-10 px-2">
+      <div className="w-full grid sm:grid-cols-3 grid-cols-1 sm:gap-10">
+        <div className="col-span-2  sm:w-4/5 w-full">
+          <div className="text-5xl font-bebasNeue py-4 text-[var(--color-hover-bg)] sm:w-3/4 w-full border-b border-[var(--color-text-accent)]">
             Creative StrategisT | Business Analyst | UX designer
           </div>
-          <div className="grid grid-cols-2 items-center justify-center w-full py-8 gap-16">
+          <div className="grid sm:grid-cols-2 grid-cols-1 items-center justify-center w-full py-8 gap-16">
             <div className="col-span-1">
               <Image
                 unoptimized={true}
@@ -20,7 +20,7 @@ function PersonalDetails() {
                 height={350}
               />
             </div>
-            <div className="col-span-1 font-montserrat text-[#EEEEEE] text-base">
+            <div className="col-span-1 font-montserrat text-[var(--color-hover-bg)] text-base">
               ‘Creative Strategist and an absolute learner with six years of
               work experience in product roles, digital consulting, strategy
               driven solutions and user-centred design. I develop work flows
@@ -28,7 +28,7 @@ function PersonalDetails() {
               Design for delivering impactful solutions’
             </div>
           </div>
-          <div className="text-4xl font-bebasNeue py-4 text-light-gray w-3/4 border-t border-[#565656]">
+          <div className="text-4xl font-bebasNeue py-4 text-light-gray sm:w-3/4 w-full border-t border-[var(--color-text-accent)]">
             Digital transformation ENTHUSIAST| Project Manager | architect
           </div>
         </div>
@@ -38,7 +38,7 @@ function PersonalDetails() {
             {competenciesList.map((competency) => (
               <span
                 key={competency}
-                className="text-base font-montserrat bg-black px-4 py-2 rounded-full text-[#EEEEEE] w-fit"
+                className="text-base font-montserrat bg-[var(--color-dark-bg)] px-4 py-2 rounded-full text-[var(--color-hover-bg)] w-fit "
               >
                 {competency}
               </span>

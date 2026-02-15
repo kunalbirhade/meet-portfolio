@@ -4,7 +4,9 @@ function ImageStack(props: any) {
   const { className } = props;
 
   return (
-    <div className={`image-stack w-[20%] relative`}>
+    <div
+      className={`image-stack sm:w-[20%] w-full relative sm:h-[400px] h-[1100px]`}
+    >
       <div
         className={`image-stack-img ${className} bg-cover bg-center transition-all duration-300`}
       ></div>

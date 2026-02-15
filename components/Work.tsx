@@ -52,7 +52,7 @@ function Work({
           autoPlay
           loop
           muted
-          className="rounded-current !h-full !w-full bg-cover object-cover bg-center transition-all duration-2000 bg-white border-2"
+          className="rounded-[18px] !h-full !w-full bg-cover object-cover bg-center transition-all duration-2000 bg-white "
         />
       );
     }
@@ -63,7 +63,7 @@ function Work({
         alt="work-1"
         width={500}
         height={500}
-        className={`rounded-current !h-full !w-full transition-all ease-in-out duration-900 bg-white ${isHovered ? "  border-2 scale-101 transition-all duration-1800 ease-linear" : ""}`}
+        className={`rounded-[18px] !h-full !w-full transition-all ease-in-out duration-900 bg-white ${isHovered ? "transition-all duration-1800 ease-linear" : ""}`}
       />
     );
   };
@@ -79,7 +79,7 @@ function Work({
       {detailedMode && (
         <div className="relative">
           <hr className="border-border-custom border-b-[3px]" />
-          <div className="flex px-4 py-6 mx-16 border-l-[3px] border-r-[3px] border-border-custom text-xl font-montserrat text-light-gray min-h-[200px] relative">
+          <div className="flex px-4 py-6 sm:mx-16 mx-4 border-l-[3px] border-r-[3px] border-border-custom text-xl font-montserrat text-light-gray min-h-[200px] relative">
             A selection of recent professional work informed by strategic
             thinking, where process, context, and execution come together to
             deliver considered outcomes. The work reflects an integrated
@@ -89,20 +89,20 @@ function Work({
             thoughtful and effective.
             {/* <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
             <span className="absolute top-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" /> */}
-            <span className="absolute bottom-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-            <span className="absolute bottom-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute bottom-[-0.35rem] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute bottom-[-0.35rem] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
           </div>
         </div>
       )}
       <hr className="border-border-custom border-b-[3px]" />
-      <div className="flex py-4 mx-16 border-l-[3px] border-r-[3px] border-border-custom">
-        <div className=" px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[23vw] gap-3">
+      <div className="flex py-4 sm:mx-16 mx-4 border-l-[3px] border-r-[3px] border-border-custom">
+        <div className=" px-1 sm:px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[23vw] sm:gap-3 gap-1">
           {projects.map((item) => {
             const isHovered = hoveredId === item.id;
             return (
               <div
                 key={item.id}
-                className={`${item.col} ${item.row} rounded-lg relative`}
+                className={`${item.col} ${item.row} rounded-current relative hover:border-[--color-hover-bg] border-2 border-border-custom`}
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
@@ -121,7 +121,7 @@ function Work({
                         {item.title}
                       </div>
                       <div
-                        className={`text-theme-overlay-text text-base font-source-code text-right font-extralight ${item.hoverClassExtra ? "w-full" : "w-[60%]"}`}
+                        className={`text-theme-overlay-text text-base font-source-code text-right font-light ${item.hoverClassExtra ? "w-full" : "w-[60%]"}`}
                       >
                         <ul className={`list-none ${item.hoverListClass}`}>
                           {item.description.map((description, index) => (

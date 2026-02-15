@@ -31,8 +31,8 @@ function Tabs() {
   ];
 
   return (
-    <div className="flex flex-col gap-4 pt-6">
-      <div className="gap-4 grid grid-cols-4 w-full text-center text-xl pt-7 font-montserrat">
+    <div className="flex flex-col gap-4 pt-6 overflow-hidden sm:overflow-y-hidden">
+      <div className="gap-4 grid sm:grid-cols-4 grid-cols-1 w-full text-center text-xl pt-7 font-montserrat">
         {tabs.map((tab) => (
           <span
             key={tab.value}
@@ -47,7 +47,7 @@ function Tabs() {
           </span>
         ))}
       </div>
-      <div className="border-border-custom mx-5 h-[62rem] min-h-[54rem]">
+      <div className="border-border-custom sm:mx-5 mx-2 h-[62rem] min-h-[54rem] overflow-auto">
         {tabs.find((tab) => tab.value === activeTab)?.content}
       </div>
     </div>

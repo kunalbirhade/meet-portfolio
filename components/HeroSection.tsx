@@ -12,7 +12,7 @@ export default function HeroSection(props: any) {
     <div className="relative">
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex items-center justify-center flex-col relative w-full">
-          <div className="mx-16 pt-[70px] relative z-10 flex flex-col items-center justify-center gap-4 ">
+          <div className="mx-4 sm:mx-16 pt-[70px] relative z-10 flex flex-col items-center justify-center gap-4 text-center sm:text-left  ">
             <Image
               unoptimized={true}
               src="/home/profile.png"
@@ -57,12 +57,12 @@ export default function HeroSection(props: any) {
             />
           </div>
         </div>
-        <div className="flex items-center justify-between w-full border-b-[3px] border-t-[3px] px-16 border-border-custom relative h-36">
-          <div className="flex border-l-[3px] justify-between px-4 border-border-custom border-r-[3px] w-full h-36 relative">
-            <span className="absolute top-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-            <span className="absolute top-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-            <span className="absolute bottom-[-5px] left-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
-            <span className="absolute bottom-[-5px] right-[-5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+        <div className="flex items-center justify-between w-full border-b-[3px] border-t-[3px] sm:px-16 px-4 border-border-custom relative sm:h-36 h-48">
+          <div className="flex border-l-[3px] justify-between px-4 border-border-custom border-r-[3px] w-full sm:h-36 h-48 sm:py-0 py-4 relative flex-col sm:flex-row">
+            <span className="absolute top-[-0.2rem] left-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute top-[-0.2rem] right-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute bottom-[-0.2rem] left-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
+            <span className="absolute bottom-[-0.2rem] right-[-5.5px] w-2 h-2 bg-light-gray rounded-full z-10" />
             <div className="flex items-center justify-center font-bebasNeue text-6xl text-[var(--color-border-custom)] [-webkit-text-stroke:1px_var(--color-hero-stroke)]">
               Portfolio
             </div>
@@ -73,7 +73,7 @@ export default function HeroSection(props: any) {
                 alt="hero-loading"
                 width={100}
                 height={10}
-                className="opacity-50"
+                className="opacity-50 sm:block hidden"
               />
               <Image
                 unoptimized={true}
@@ -81,7 +81,7 @@ export default function HeroSection(props: any) {
                 alt="hero-loading"
                 width={100}
                 height={10}
-                className="opacity-50"
+                className="opacity-50 sm:block hidden"
               />
               <Image
                 unoptimized={true}

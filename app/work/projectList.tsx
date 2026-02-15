@@ -18,7 +18,7 @@ const workProjects = [
     ],
     subtitle:
       "Construction Management Platform | Digital Transformation Consulting",
-    hoverClass: "absolute bottom-0 left-0 min-h-[12vw] m-0.5 rounded-b-current",
+    hoverClass: "absolute bottom-0 left-0 min-h-[12vw] rounded-b-current",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -38,8 +38,7 @@ const workProjects = [
       "Project Execution",
     ],
     subtitle: "Clean India Mission | Energy Transition",
-    hoverClass:
-      "absolute bottom-0 left-0 h-[12vw] m-0.5 rounded-b-current w-[calc(100%-0.25rem)]",
+    hoverClass: "absolute bottom-0 left-0 h-[12vw] rounded-b-current w-full",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -55,8 +54,7 @@ const workProjects = [
     title: "STACKBUILDER",
     description: ["Website Design", "Branding", "UX Lead"],
     subtitle: "Content & Marketing | Creative Consulting",
-    hoverClass:
-      "absolute bottom-0 left-0 h-[12vw] w-full border-b-[2px] border-r-[2px] border-l-[2px] rounded-b-current",
+    hoverClass: "absolute bottom-0 left-0 h-[12vw] w-full rounded-b-current",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -78,8 +76,7 @@ const workProjects = [
     ],
     subtitle:
       "HazMat Logistics | Digital Platform | B2B industrial logistics solution",
-    hoverClass:
-      "absolute top-0 left-0 min-h-[11vw] m-0.5 w-[calc(100%-0.25rem)] rounded-t-current",
+    hoverClass: "absolute top-0 left-0 min-h-[11vw] w-full rounded-t-current",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -101,7 +98,7 @@ const workProjects = [
     ],
     subtitle: "Investment Platform | Crypto-Commodities-Stocks",
     hoverClass:
-      "absolute bottom-0 left-0 min-h-[11vw] w-full border-b-[2px] border-r-[2px] border-l-[2px] rounded-b-current",
+      "absolute bottom-0 left-0 min-h-[11vw] w-full rounded-b-current",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -117,8 +114,7 @@ const workProjects = [
     title: "SPENDO",
     description: ["Website Design", "Product UX"],
     subtitle: "Corporate petty cash management solution",
-    hoverClass:
-      "absolute bottom-0 right-0 w-[13rem] h-full border-t-[2px] border-b-[2px] border-r-[2px] rounded-r-current",
+    hoverClass: "absolute bottom-0 right-0 w-[13rem] h-full rounded-r-current",
     hoverClassExtra: "flex-col flex-wrap items-start space-y-5",
     hoverListClass: "text-left w-full",
   },
@@ -135,7 +131,7 @@ const workProjects = [
     description: ["Product Research", "User Experience", "Design Mockups"],
     subtitle: "Pet Platform for Connecting | Pet enthusiasts as a community",
     hoverClass:
-      "absolute bottom-0 left-0 min-h-[10vw] w-full border-b-[2px] border-r-[2px] border-l-[2px] rounded-b-current",
+      "absolute bottom-0 left-0 min-h-[10vw] w-full rounded-b-current",
     hoverClassExtra: "",
   },
   {
@@ -155,8 +151,7 @@ const workProjects = [
     ],
     subtitle:
       "Business Intelligence | Internal Construction Project Management System",
-    hoverClass:
-      "absolute bottom-0 right-0 w-[15rem] h-full border-t-[2px] border-b-[2px] border-r-[2px] rounded-r-current",
+    hoverClass: "absolute bottom-0 right-0 w-[15rem] h-full rounded-r-current",
     hoverClassExtra: "flex-col flex-wrap items-start space-y-5",
     hoverListClass: "text-left w-full",
   },
@@ -173,7 +168,7 @@ const workProjects = [
     description: ["Proposal", "Curating", "Content Strategy", "Digital Media"],
     subtitle: "International Academic Association | University of Hyderabad",
     hoverClass:
-      "absolute left-0 inset-1/2 -translate-y-[60%] min-h-[16vw] border-l-[2px] border-r-[2px] w-full",
+      "absolute left-0 inset-1/2 -translate-y-[60%] min-h-[16vw] w-full",
     hoverClassExtra: "",
     hoverListClass: "",
   },
@@ -194,8 +189,7 @@ const workProjects = [
       "Digital Store",
     ],
     subtitle: "Coffee House in Berlin | Business Consulting",
-    hoverClass:
-      "absolute bottom-0 right-0 w-[12rem] h-full border-t-[2px] border-b-[2px] border-r-[2px] rounded-r-current",
+    hoverClass: "absolute bottom-0 right-0 w-[12rem] h-full rounded-r-current",
     hoverClassExtra: "flex-col flex-wrap items-start space-y-5",
     hoverListClass: "text-left w-full",
   },
@@ -212,7 +206,7 @@ const workProjects = [
     description: ["Proposal ", "Methodology", "Business Development Strategy"],
     subtitle: "Master Thesis | Management Research",
     hoverClass:
-      "absolute bottom-0 left-0 min-h-[12vw] w-full border-b-[2px] border-r-[2px] border-l-[2px] rounded-b-current",
+      "absolute bottom-0 left-0 min-h-[12vw] w-full rounded-b-current",
   },
   {
     id: 12,
@@ -227,8 +221,7 @@ const workProjects = [
     description: ["Business Model", "Investor Pitch", "Product Visuals"],
     subtitle:
       "Pressed Funding for Product Development | Eduverse as Gamified Learning Experience  ",
-    hoverClass:
-      "absolute bottom-0 right-0 w-[230px] h-full border-t-[2px] border-b-[2px] border-r-[2px] rounded-r-current",
+    hoverClass: "absolute bottom-0 right-0 w-[230px] h-full rounded-r-current",
     hoverClassExtra: "flex-col flex-wrap items-start space-y-5",
     hoverListClass: "text-left w-full",
   },

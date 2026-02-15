@@ -10,7 +10,6 @@ import About from "./About";
 import ContactUs from "./ContactUs";
 import { useScrollContainer } from "./ScrollContext";
 import { useContainerScrollProgress } from "./useContainerScroll";
-import TaJHotel from "../app/playground/Projects/TaJHotel";
 export default function HomeSections({
   playgroundProjects = [],
 }: {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Tabs from "../app/about/tabs";
 import TitleBlock from "./shared/titleBlock";
@@ -13,7 +12,7 @@ function About() {
         link="/about"
       />
       <hr className="border-border-custom border-b-[3px]" />
-      <div className="flex mx-16 border-l-[3px] border-r-[3px] border-border-custom">
+      <div className="flex sm:mx-16 mx-4 border-l-[3px] border-r-[3px] border-border-custom">
         <Tabs />
       </div>
     </div>
