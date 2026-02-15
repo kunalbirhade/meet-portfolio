@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-6 left-0 right-0 text-center w-full z-50 font-source-code flex sm:items-center items-start justify-center sm:flex-row flex-col mx-4 ">
+    <header className="fixed top-6 left-0 right-0 text-center w-full z-50 font-source-code flex sm:items-center items-start justify-center sm:flex-row flex-col sm:mx-0 mx-4">
       <div className="w-fit px-6 py-2.5 flex justify-center items-center gap-4 border-2 border-theme-text relative z-10  float-left sm:float-none mx-2 sm:mx-auto rounded-current sm:rounded-xl">
         <div className="absolute top-0 left-0 h-full bg-gradient-to-t to-dark-charcoal-95 from-dark-gray-95 z-0 blur-sm rounded-xl w-full"></div>
         {/* Desktop Menu */}
