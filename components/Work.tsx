@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import workProjects from "../app/work/projectList";
 import TitleBlock from "./shared/titleBlock";
+import { useRouter } from "next/navigation";
 
 function Work({
   projects = workProjects.slice(0, 6),
@@ -26,11 +27,12 @@ function Work({
     hoverClass: string;
     hoverClassExtra?: string;
     hoverListClass?: string;
+    link?: string;
   }[];
   detailedMode?: boolean;
 }) {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
-
+  const router = useRouter();
   const getMediaBlock = (item: {
     id: number;
     src: string;
@@ -102,7 +104,12 @@ function Work({
             return (
               <div
                 key={item.id}
-                className={`${item.col} ${item.row} rounded-current relative hover:border-[--color-hover-bg] border-2 border-border-custom`}
+                className={`${item.col} ${item.row} rounded-current relative hover:border-[--color-hover-bg] border-2 border-border-custom cursor-pointer`}
+                onClick={() => {
+                  if (item.link) {
+                    router.push(item.link);
+                  }
+                }}
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >

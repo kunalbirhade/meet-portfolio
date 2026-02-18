@@ -117,6 +117,7 @@ const workProjects = [
     hoverClass: "absolute bottom-0 right-0 w-[13rem] h-full rounded-r-current",
     hoverClassExtra: "flex-col flex-wrap items-start space-y-5",
     hoverListClass: "text-left w-full",
+    link: "/work/spendo",
   },
   {
     id: 7,
@@ -133,6 +134,7 @@ const workProjects = [
     hoverClass:
       "absolute bottom-0 left-0 min-h-[10vw] w-full rounded-b-current",
     hoverClassExtra: "",
+    link: "/work/pawsome"
   },
   {
     id: 8,

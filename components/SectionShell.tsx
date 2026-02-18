@@ -7,15 +7,17 @@ export default function SectionShell({
   title,
   subtitle,
   children,
+  isProjectPage = false,
 }: {
   id?: string;
   title?: string;
   subtitle?: string;
   children: React.ReactNode;
+  isProjectPage?: boolean;
 }) {
   return (
     <section id={id} className="w-full mx-auto py-16">
-      <PageHeader />
+      {isProjectPage ? null : <PageHeader />}
       <div>{children}</div>
     </section>
   );
